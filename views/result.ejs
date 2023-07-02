@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fast Ip Query</title>
+    <link rel="stylesheet" href="https://tailwindui.com/v2-assets/components.css?hash=fe7b0d8e5fd7f78e21e2652a5de212c0">
+    <script src="https://tailwindui.com/v2-assets/components.js?hash=c42e44f6c92eb7517e1a4e8bd13028a6"></script>
+    <link rel="modulepreload" href="https://tailwindui.com/build/assets/iframe-alpine-964dceff.js">
+    <link rel="modulepreload" href="https://tailwindui.com/build/assets/iframe-a81dc9a8.js">
+    <link rel="modulepreload" href="https://tailwindui.com/build/assets/_commonjsHelpers-87174ba5.js">
+    <script type="module" src="https://tailwindui.com/build/assets/iframe-alpine-964dceff.js"></script>
+</head>
+<body class="bg-white" style="overflow-y: auto;">
+    <div class="bg-white px-4 sm:px-6 lg:px-8">
+        <div class="mx-auto max-w-4xl">
+            <div style="padding-top: 7rem;">
+                <div class="px-4 sm:px-0">
+                    <h3 class="text-base font-semibold leading-7 text-gray-900">Fast <span class="text-indigo-600">Ip</span> Query</h3>
+                    <p class="mt-1 max-w-2xl text-sm leading-6 text-gray-500">Made by <a href="https://github.com/fastuptime" class="font-medium text-indigo-600 hover:text-indigo-500 transition ease-in-out duration-150">Fast Uptime</a> with ❤️</p>
+                </div>
+                <div class="mt-6 border-t border-gray-100">
+                    <dl class="divide-y divide-gray-100">
+                        <div class="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
+                            <dt class="text-sm font-medium leading-6 text-gray-900">Ip</dt>
+                            <dd class="mt-1 text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0"><%= result.ip %></dd>
+                        </div>
+                        <div class="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
+                            <dt class="text-sm font-medium leading-6 text-gray-900">Hostname</dt>
+                            <dd class="mt-1 text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0"><%= result.hostname %></dd>
+                        </div>
+                        <div class="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
+                            <dt class="text-sm font-medium leading-6 text-gray-900">City</dt>
+                            <dd class="mt-1 text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0"><%= result.city %></dd>
+                        </div>
+                        <div class="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
+                            <dt class="text-sm font-medium leading-6 text-gray-900">Region</dt>
+                            <dd class="mt-1 text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0"><%= result.region %></dd>
+                        </div>
+                        <div class="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
+                            <dt class="text-sm font-medium leading-6 text-gray-900">Country</dt>
+                            <dd class="mt-1 text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0"><%= result.country %></dd>
+                        </div>
+                        <div class="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
+                            <dt class="text-sm font-medium leading-6 text-gray-900">Location</dt>
+                            <dd class="mt-1 text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0"><%= result.loc %></dd>
+                        </div>
+                        <div class="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
+                            <dt class="text-sm font-medium leading-6 text-gray-900">Postal</dt>
+                            <dd class="mt-1 text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0"><%= result.postal %></dd>
+                        </div>
+                        <div class="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
+                            <dt class="text-sm font-medium leading-6 text-gray-900">Organization</dt>
+                            <dd class="mt-1 text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0">
+                                <%= result.org %>
+                            </dd>
+                        </div>
+                        <div class="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
+                            <dt class="text-sm font-medium leading-6 text-gray-900">Timezone</dt>
+                            <dd class="mt-1 text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0"><%= result.timezone %></dd>
+                        </div>
+                    </dl>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
